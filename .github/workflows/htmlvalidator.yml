@@ -11,3 +11,8 @@ jobs:
           root: wwwroot
           log_level: INFO
           css: true
+        continue-on-error: true
+      - uses: actions/upload-artifact@v2
+        with:
+          name: log
+          path: log.log
