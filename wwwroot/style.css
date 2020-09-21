@@ -95,6 +95,8 @@ html {
   height: 750px;
   position: relative;
   overflow: hidden;
+  background: url("assets/bg2_video_poster.png") no-repeat fixed center;
+  background-size: cover;
 }
 video {
   position: absolute;
