@@ -219,7 +219,7 @@
   <section class="flex flex-col gap-12 items-center px-4">
     <a target="_blank" href="https://wasabiwallet.io/"
       ><div
-        class="flex gap-4 items-center content-center bg-lime-500 px-8 py-4 rounded-sm cursor-pointer hover:bg-lime-600"
+        class="flex gap-4 items-center content-center bg-[#77c600] px-8 py-4 rounded-sm cursor-pointer hover:bg-lime-600"
       >
         Try Wasabi Wallet <ArrowDownLeftSvg />
       </div></a
@@ -345,8 +345,12 @@
 <style>
   .bg-img {
     background-size: cover;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)),
-      url($img/bg-bamboo.png);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.6),
+        rgb(0, 0, 0)
+      ),
+      url($img/bamboo.avif);
   }
 
   .mobile-icon:after,
