@@ -15,7 +15,6 @@ jobs:
     - name: 🔨 Build Project
       run: |
         npm install
-        npm i -D @sveltejs/adapter-static
         npm run build
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
