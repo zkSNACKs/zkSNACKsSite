@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Inter", sans-serif;
+  color: white;
+  scrollbar-width: thin;
+  scrollbar-color: grey black;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  scroll-behaviour: smooth;
+  webkit-scroll-behavior: smooth;
+}
+
+body.mobile-menu-active {
+  overflow: hidden;
+}
+
+@layer base {
+  html {
+    scroll-behaviour: smooth;
+    webkit-scroll-behavior: smooth;
+  }
+  h1 {
+    @apply text-5xl;
+  }
+  h2 {
+    @apply text-5xl;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+  h4 {
+    @apply text-xl;
+  }
+  div {
+    @apply text-xl;
+  }
+}
