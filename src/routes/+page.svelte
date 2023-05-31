@@ -283,7 +283,7 @@
     </h2>
     <p class="text-center">
       Tor is the backbone of privacy on the Internet. Wasabi Wallet relies on it
-      in many aspects, so we support it wholeheartdely with $2,500 per month.
+      in many aspects, so we support it wholeheartedly with $2,500 per month.
     </p>
     <a
       target="_blank"
