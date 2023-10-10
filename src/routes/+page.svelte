@@ -1,113 +1,15 @@
 <script>
-  import ArrowDownLeftSvg from "../components/icons/ArrowDownLeftSvg.svelte";
-  import ScrollSvg from "../components/icons/ScrollSvg.svelte";
-  import TorLogoSvg from "../components/icons/TorLogoSvg.svelte";
-  import WasabiWalletLogoSvg from "../components/icons/WasabiWalletLogoSvg.svelte";
-  import ZksnacksLogo from "../components/icons/zksnacksLogo.svelte";
-  import macbook from "../lib/images/macbook-2.png";
+  import data from "$data/content.json";
 
-  let showMobileMenu = false;
-
-  function handleMobileIconClick() {
-    showMobileMenu = !showMobileMenu;
-    window.document.body.classList.toggle("mobile-menu-active");
-  }
-
-  function handleMobileMenuItemClick() {
-    showMobileMenu = false;
-    window.document.body.classList.toggle("mobile-menu-active");
-  }
-
-  function handleDesktopMenuItemClick() {
-    showMobileMenu = false;
-  }
+  import ArrowDownLeftSvg from "$components/icons/ArrowDownLeftSvg.svelte";
+  import ScrollSvg from "$components/icons/ScrollSvg.svelte";
+  import TorLogoSvg from "$components/icons/TorLogoSvg.svelte";
+  import WasabiWalletLogoSvg from "$components/icons/WasabiWalletLogoSvg.svelte";
+  import macbook from "$lib/images/macbook-2.png";
 </script>
 
-<svelte:head>
-  <title>zkSNACKs - Unfairly Private in the Digital Age</title>
-  <meta
-    name="description"
-    content="zkSNACKs is a company focused on R&D related to privacy in the digital age."
-  />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="zkSNACKs" />
-  <meta property="og:locale" content="en" />
-  <meta property="og:url" content="https://zksnacks.com" />
-  <meta
-    property="og:title"
-    content="zkSNACKs - Unfairly Private in the Digital Age"
-  />
-  <meta
-    property="og:description"
-    content="zkSNACKs is a company focused on R&D related to privacy in the digital age."
-  />
-  <meta property="og:image" content="https://zksnacks.com/preview.png" />
-</svelte:head>
-
-<header
-  class="fixed bg-black/25 px-4 py-4 left-0 right-0 md:bg-transparent md:border-b md:border-white md:max-w-5xl md:absolute md:m-auto md:px-0"
->
-  <div class="flex justify-between">
-    <div class=" font-light z-10 w-20 text-base block md:hidden">
-      <ZksnacksLogo />
-    </div>
-
-    <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <div
-      on:click={handleMobileIconClick}
-      class="mobile-icon w-6 h-4 relative cursor-pointer z-10 md:hidden"
-    >
-      <div class="middle-line" />
-    </div>
-  </div>
-  <div
-    class="m-0 px-4 max-w-5xl {showMobileMenu
-      ? ' bg-black fixed h-screen w-screen top-0 left-0 overflow-hidden flex flex-col items-start'
-      : 'hidden md:flex md: justify-between text-base font-thin'}"
-  >
-    <div class=" font-light w-20 text-base hidden md:block">
-      <ZksnacksLogo />
-    </div>
-    <ul class="pt-16 flex flex-col gap-6 md:flex md:flex-row md:pt-0">
-      <li>
-        <a
-          on:click={showMobileMenu
-            ? handleMobileMenuItemClick
-            : handleDesktopMenuItemClick}
-          href="#about"
-          class={showMobileMenu
-            ? "text-xl"
-            : "font-medium hover:text-slate-300"}>About</a
-        >
-      </li>
-      <li>
-        <a
-          on:click={showMobileMenu
-            ? handleMobileMenuItemClick
-            : handleDesktopMenuItemClick}
-          href="#wasabi"
-          class={showMobileMenu
-            ? "text-xl"
-            : "font-medium hover:text-slate-300"}>Wasabi Wallet</a
-        >
-      </li>
-      <li>
-        <a
-          on:click={showMobileMenu
-            ? handleMobileMenuItemClick
-            : handleDesktopMenuItemClick}
-          href="#other"
-          class={showMobileMenu
-            ? " text-xl"
-            : "font-medium hover:text-slate-300"}>Other Projects</a
-        >
-      </li>
-    </ul>
-  </div>
-</header>
-
 <section
-  class="bg-img h-full px-4 flex flex-col pt-20 items-center gap-28 justify-center"
+  class="bg-img h-full px-4 flex flex-col pt-44 items-center gap-28 justify-center"
 >
   <div class="flex flex-col gap-8 items-center md:max-w-xl">
     <h3 class=" uppercase text-center">
@@ -120,12 +22,12 @@
     </div>
   </div>
 
-  <a class="h-6 w-6" href="#about">
+  <a class="h-6 w-6 animate-bounce" href="#about">
     <ScrollSvg color="white" />
   </a>
 </section>
 <div
-  class="bg-gradient-to-b from-black via-green-800 to-black flex flex-col gap-48 pt-28 pb-48 items-center justify-stretch"
+  class="bg-gradient-to-b from-black via-[#457300] to-black flex flex-col gap-48 pt-28 pb-48 items-center justify-stretch"
 >
   <section
     id="about"
@@ -217,9 +119,9 @@
     </div>
   </section>
   <section class="flex flex-col gap-12 items-center px-4">
-    <a target="_blank" href="https://wasabiwallet.io/"
+    <a target="_blank" href="https://wasabiwallet.io/" class="no-underline"
       ><div
-        class="flex gap-4 items-center content-center bg-[#77c600] px-8 py-4 rounded-sm cursor-pointer hover:bg-lime-600"
+        class="flex gap-4 items-center content-center bg-green px-8 py-4 rounded-sm cursor-pointer hover:bg-green/80 no-underline"
       >
         Try Wasabi Wallet <ArrowDownLeftSvg />
       </div></a
@@ -248,7 +150,7 @@
       <a
         target="_blank"
         href="https://lightningprivacy.com/en/introduction"
-        class="border border-white rounded-sm px-8 py-2 text-base hover:border-slate-300 hover:text-slate-300"
+        class="border border-white rounded-sm px-8 py-2 text-base hover:border-slate-300 hover:text-slate-300 no-underline"
         >Learn more</a
       >
     </div>
@@ -261,7 +163,7 @@
       <a
         target="_blank"
         href="https://www.huntingsats.com/"
-        class="border border-white rounded-sm px-8 py-2 text-base hover:border-slate-300 hover:text-slate-300"
+        class="border border-white rounded-sm px-8 py-2 text-base hover:border-slate-300 hover:text-slate-300 no-underline"
         >Learn more</a
       >
     </div>
@@ -271,7 +173,7 @@
       <a
         target="_blank"
         href="https://www.coindesk.com/tech/2020/06/25/summer-2020-is-funding-season-for-open-source-bitcoin-development/"
-        class="border border-white rounded-sm px-8 py-2 text-base hover:border-slate-300 hover:text-slate-300"
+        class="border border-white rounded-sm px-8 py-2 text-base hover:border-slate-300 hover:text-slate-300 no-underline"
         >Learn more</a
       >
     </div>
@@ -288,7 +190,7 @@
     <a
       target="_blank"
       href="https://www.torproject.org/"
-      class="border-b border-transparent hover:border-white"
+      class="border-b border-transparent hover:border-white no-underline"
       ><div
         class="flex gap-4 items-center content-center bg-transparent rounded-sm cursor-pointer"
       >
@@ -321,73 +223,10 @@
   <div class="h-px md:bg-slate-100 md:max-w-5xl m-auto" />
 </div>
 
-<footer id="contact" class="bg-black px-4 pt-32 pb-12">
-  <div
-    class="flex flex-col gap-8 md:flex-row md:gap-0 justify-between max-w-5xl m-auto items-start"
-  >
-    <div class="flex flex-col gap-2">
-      <div class="w-32 font-bold md:text-base pb-8"><ZksnacksLogo /></div>
-      <div class="cursor-pointer md:text-base"><a href="#about">About</a></div>
-      <div class="cursor-pointer md:text-base">
-        <a href="#wasabi">Wasabi Wallet</a>
-      </div>
-      <div class="cursor-pointer md:text-base">
-        <a href="#other">Other Projects</a>
-      </div>
-    </div>
-    <div class="flex flex-col gap-2">
-      <div class="font-bold md:text-base">zkSNACKs Ltd.</div>
-      <div class="cursor-pointer md:text-base">contact@zksnacks.com</div>
-    </div>
-  </div>
-</footer>
-
 <style>
   .bg-img {
     background-size: cover;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.6),
-        rgb(0, 0, 0)
-      ),
-      url($img/bamboo.avif);
-  }
-
-  .mobile-icon:after,
-  .mobile-icon:before,
-  .middle-line {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    transition: all 0.4s;
-  }
-
-  .mobile-icon:before,
-  .middle-line {
-    top: 0;
-  }
-
-  .mobile-icon:after,
-  .middle-line {
-    bottom: 0;
-  }
-
-  .mobile-icon:before {
-    width: 66%;
-  }
-
-  .mobile-icon:after {
-    width: 33%;
-  }
-
-  .middle-line {
-    margin: auto;
-  }
-
-  .mobile-icon:hover:before,
-  .mobile-icon:hover:after {
-    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)),
+      url($img/bg-bamboo.png);
   }
 </style>

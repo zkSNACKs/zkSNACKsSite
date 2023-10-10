@@ -1,0 +1,192 @@
+{
+  "seo": {
+    "title": "zkSNACKs - Unfairly Private in the Digital Age",
+    "description": "zkSNACKs is a company focused on R&D related to privacy in the digital age.",
+    "website_name": "zkSNACKs",
+    "website_url": "https://zksnacks.com",
+    "preview_url": "https://zksnacks.com/preview.png"
+  },
+  "header": {
+    "home_link": "/",
+    "menu": [
+      {
+        "name": "About",
+        "link": "/#about"
+      },
+      {
+        "name": "Wasabi Wallet",
+        "link": "/#wasabi"
+      },
+      {
+        "name": "Coinjoin API",
+        "link": "/coinjoin-api"
+      },
+      {
+        "name": "Other Projects",
+        "link": "/#other"
+      }
+    ]
+  },
+  "footer": {
+    "menu": [
+      {
+        "name": "About",
+        "link": "/#about"
+      },
+      {
+        "name": "Wasabi Wallet",
+        "link": "/#wasabi"
+      },
+      {
+        "name": "Coinjoin API",
+        "link": "/coinjoin-api"
+      },
+      {
+        "name": "Other Projects",
+        "link": "/#other"
+      }
+    ],
+    "contact": {
+      "name": "zkSNACKs Ltd.",
+      "email": "contact@zksnacks.com"
+    }
+  },
+  "coinjoin_api": {
+    "hero": {
+      "title": "Simple & Powerful Coinjoin API",
+      "body": "Enterprises can protect their users' privacy with collaborative Bitcoin transactions.",
+      "cta": {
+        "content": "Get in touch",
+        "link": "mailto:integrations@zksnacks.com"
+      }
+    },
+    "section_1": {
+      "title": "Privacy is Business as usual",
+      "body": "By default, all bitcoin transactions are public and easily traceable by anyone. Yet, businesses and individuals may want to protect commercial and personal interests from the public, as is common in traditional financial services. <br/><br/> As Bitcoin is programmable, its transactions can be made collaborative to protect users from leaking sensitive personal details. That’s exactly what coinjoins do."
+    },
+    "section_2": {
+      "title": "Easy Privacy is Hard",
+      "body": "Coinjoin implementations are hard to develop and maintain, with many performance, reliability and efficiency quirks. <br/><br/> Companies that want to add powerful and robust privacy features to their bitcoin products, such as wallets, brokers and custodians can do so today without the hassle. <br/><br/> Now available with a simple coinjoin API, collaborative bitcoin transactions are accessible to anyone and anywhere."
+    },
+    "section_3": {
+      "title": "A new era for Bitcoin privacy",
+      "subtitle": "Over the past five years, running free and open source Wasabi Wallet has shown that coinjoins can bring privacy to a large number of consumers without any tradeoffs on security or sovereignty.",
+      "specs": [
+        {
+          "title": "Speed",
+          "explainer": "Many Coinjoins per Hour"
+        },
+        {
+          "title": "Pricing",
+          "explainer": "0.3% Service Fee & Free Remixes"
+        },
+        {
+          "title": "Accessibility",
+          "explainer": "Any Bitcoin Amount Works"
+        },
+        {
+          "title": "Volume",
+          "explainer": "250,000+ BTC  Since Launch"
+        }
+      ]
+    },
+    "section_4": {
+      "title": "Benefits of the Coinjoin API",
+      "subtitle": "Bitcoin companies and wallet developers enjoy several benefits by integrating the coinjoin API into their operations.",
+      "value_props": [
+        {
+          "icon": "graph",
+          "title": "New Revenue Stream",
+          "body": "With state-of-the-art privacy features, monetize a high-traffic user base and attract new users to diversify your revenue streams in cyclical markets."
+        },
+        {
+          "icon": "clock",
+          "title": "Fast Time to Market",
+          "body": "Get up and running in a few weeks on a highly liquid coinjoin coordinator. Deliver high-value and scalable features at a fraction of the cost of building from scratch."
+        },
+        {
+          "icon": "shield",
+          "title": "Adhere to Privacy Laws",
+          "body": "Respect local and regional consumer privacy laws by protecting personal user transaction information."
+        },
+        {
+          "icon": "feather",
+          "title": "Low Maintenance",
+          "body": "Deploy-and-forget maintenance with a backend infrastructure overhead fully managed by zkSNACKs offering a high uptime."
+        },
+        {
+          "icon": "people",
+          "title": "Reduce Data Breach Risk",
+          "body": "Mitigate the impact to your customers in case of data breaches from exchange and brokerage platforms."
+        },
+        {
+          "icon": "",
+          "title": "Get in Touch",
+          "body": "If you are interested in learning more about the coinjoin API, please contact us at: <br/><br/> <a href='mailto:integrations@zksnacks.com' style='font-weight:800'>integrations@zksnacks.com</a>"
+        }
+      ]
+    },
+    "section_5": {
+      "title": "Eligibility Requirements",
+      "body": "Businesses and developers who want their Bitcoin products eligible to integrate the coinjoin API may be asked to meet certain technical requirements around network-level privacy, such as using block filters and Tor.",
+      "blog": {
+        "name": "Read more →",
+        "url": "https://blog.wasabiwallet.io/what-does-the-zk-in-zksnacks-mean/"
+      }
+    },
+    "section_6": {
+      "title": "What industry players are saying",
+      "quotes": [
+        {
+          "quote": "“Coinjoin is an essential piece in the privacy puzzle. Now anyone can reclaim their privacy without compromise on security.”",
+          "author": "Hynek Jína, Head of Development",
+          "logo": "trezor"
+        },
+        {
+          "quote": "“When the WabiSabi protocol became production-ready, it was a no-brainer for me to build an option to incorporate it.”",
+          "author": "Kukks, Software Engineer",
+          "logo": "btcpay"
+        },
+        {
+          "quote": "“WabiSabi is a scalable, flexible, and anonymous coinjoin protocol. It enables wallets to reclaim the privacy of its users in a tailor made package.”",
+          "author": "Max Hillebrand, Contributor",
+          "logo": "wasabiwallet"
+        }
+      ]
+    },
+    "faq_section": {
+      "title": "Frequently Asked Questions",
+      "faq_list": [
+        {
+          "isExpanded": true,
+          "question": "How does the API integration work?",
+          "answer": "We want to understand your product, business and discuss technical requirements prior to onboarding. Then, we cover the commercial terms of the affiliate program, and clarify the project timeline and scope. We will then have a technical kickoff meeting as part of the onboarding process with ongoing support."
+        },
+        {
+          "isExpanded": false,
+          "question": "Is the API public? If not, how to apply?",
+          "answer": "Yes, the API is publicly <a href='https://wasabiwallet.io/swagger/index.html'>accessible here</a>. There are additional client-side requirements not scoped in the API documentation such as coin selection, Tor integration, block filtering, and more. For successful integrations, businesses and wallet developers should reach out to <a href='mailto:integrations@zksnacks.com'>integrations@zksnacks.com</a> to get all relevant specifications and requirements."
+        },
+        {
+          "isExpanded": false,
+          "question": "What is the affiliate program? ",
+          "answer": "Qualifying partners who integrate the Coinjoin API will participate in a revenue sharing that will be defined prior. Payments are made based on a frequency that is also discussed and agreed upon beforehand."
+        },
+        {
+          "isExpanded": false,
+          "question": "What are the risks of coinjoins in general?",
+          "answer": "There is the technical overhead of maintaining a reliable coinjoin coordinator, which is what zkSNACKs is responsible for. Other risks include any risk related to the bitcoin network, as coinjoins are nothing more than regular collaborative bitcoin transactions."
+        },
+        {
+          "isExpanded": false,
+          "question": "Where can I find case studies of successful integrations?",
+          "answer": "At the moment, Trezor, one of the world’s leading bitcoin hardware wallet manufacturers have successfully integrated the coinjoin API in their desktop app, Trezor Suite. BTCPay Server, a popular self-hosted bitcoin payment processor has a plugin using the WabiSabi coinjoin protocol. Detailed case studies may be published shortly, but we would gladly provide more details in further conversations."
+        }
+      ]
+    },
+    "cta_section": {
+      "title": "Get in Touch",
+      "body": "If you are interested in learning more about the coinjoin API, please contact us at: <br/><br/> <a href='mailto:integrations@zksnacks.com' style='font-weight:800;font-size:16px;'>integrations@zksnacks.com</a>"
+    }
+  }
+}
