@@ -127,7 +127,7 @@
       ]
     },
     "section_5": {
-      "title": "Eligibility Requirements",
+      "title": "Eligibility Criteria",
       "body": "Businesses and developers who want their Bitcoin products eligible to integrate the coinjoin API may be asked to meet certain technical requirements around network-level privacy, such as using block filters and Tor.",
       "blog": {
         "name": "Read more →",
@@ -165,7 +165,7 @@
         {
           "isExpanded": false,
           "question": "Is the API public? If not, how to apply?",
-          "answer": "Yes, the API is publicly <a href='https://wasabiwallet.io/swagger/index.html'>accessible here</a>. There are additional client-side requirements not scoped in the API documentation such as coin selection, Tor integration, block filtering, and more. For successful integrations, businesses and wallet developers should reach out to <a href='mailto:integrations@zksnacks.com'>integrations@zksnacks.com</a> to get all relevant specifications and requirements."
+          "answer": "Yes, the API is publicly <a href='https://wasabiwallet.io/swagger/index.html' target='_blank'>accessible here</a>. There are additional client-side requirements not scoped in the API documentation such as coin selection, Tor integration, block filtering, and more. For successful integrations, businesses and wallet developers should reach out to <a href='mailto:integrations@zksnacks.com'>integrations@zksnacks.com</a> to get all relevant specifications and requirements."
         },
         {
           "isExpanded": false,

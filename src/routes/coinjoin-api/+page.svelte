@@ -152,7 +152,7 @@
     <a
       class="text-green underline w-full text-center"
       href={data.coinjoin_api.section_5.blog.url}
-      >{data.coinjoin_api.section_5.blog.name}</a
+      target="_blank">{data.coinjoin_api.section_5.blog.name}</a
     >
   </section>
 
