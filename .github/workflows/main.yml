@@ -7,9 +7,9 @@ jobs:
     timeout-minutes: 180
     steps:
     - name: 🚚 Get latest code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
     - name: Use Node.js 20
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
         node-version: '20'
     - name: 🔨 Build Project
