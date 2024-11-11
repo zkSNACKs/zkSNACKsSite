@@ -27,9 +27,9 @@
     <Warning height={20} width={20} color="white" />
   </div>
   <div class="text-xs md:text-sm text-white">
-    Important Notice: The zkSNACKs default server has been permanently
-    discontinued as of June 1st, 2024. All server operations have ceased and
-    zkSNACKs is in the process of winding down its business operations.
+    Important Notice: The zkSNACKs default coordinator server has been
+    permanently discontinued as of June 1st, 2024. zkSNACKs is in the process of
+    winding down its business operations.
   </div>
 </div>
 <header
