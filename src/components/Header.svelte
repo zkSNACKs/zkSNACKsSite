@@ -27,8 +27,9 @@
     <Warning height={20} width={20} color="white" />
   </div>
   <div class="text-xs md:text-sm text-white">
-    The zkSNACKs default coordinator was shut down for all clients on June 1st,
-    2024 and is no longer operational.
+    Important Notice: The zkSNACKs default server has been permanently
+    discontinued as of June 1st, 2024. All server operations have ceased and
+    zkSNACKs is in the process of winding down its business operations.
   </div>
 </div>
 <header
