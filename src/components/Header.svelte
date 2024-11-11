@@ -1,6 +1,7 @@
 <script>
   import data from "$data/content.json";
   import ZksnacksLogo from "$components/icons/zksnacksLogo.svelte";
+  import Warning from "$components/icons/Warning.svelte";
 
   let showMobileMenu = false;
 
@@ -19,6 +20,15 @@
   }
 </script>
 
+<div
+  class="w-full flex justify-center items-center gap-4 bg-red px4 py-2 border border-red"
+>
+  <Warning height={20} width={20} color="white" />
+  <div class="text-sm text-white">
+    The zkSNACKs default coordinator was shut down for all clients on June 1st,
+    2024 and is no longer operational.
+  </div>
+</div>
 <header
   class="z-10 min-w-[320px] fixed bg-black/25 px-4 py-4 left-0 right-0 md:bg-transparent md:border-b md:border-white md:max-w-5xl md:absolute md:m-auto md:px-0 h-14"
 >
@@ -30,6 +40,7 @@
     </a>
 
     <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
     <div
       on:click={handleMobileIconClick}
       class="mobile-icon w-6 h-4 relative cursor-pointer z-10 md:hidden"
