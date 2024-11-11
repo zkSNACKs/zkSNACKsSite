@@ -21,10 +21,12 @@
 </script>
 
 <div
-  class="w-full flex justify-center items-center gap-4 bg-red px4 py-2 border border-red"
+  class="w-full flex justify-center items-center gap-4 bg-red px-4 py-2 border border-red"
 >
-  <Warning height={20} width={20} color="white" />
-  <div class="text-sm text-white">
+  <div class="shrink-0">
+    <Warning height={20} width={20} color="white" />
+  </div>
+  <div class="text-xs md:text-sm text-white">
     The zkSNACKs default coordinator was shut down for all clients on June 1st,
     2024 and is no longer operational.
   </div>
