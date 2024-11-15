@@ -1,31 +1,30 @@
-on: push
-name: 🚀 Deploy to Production server
+on:
+  push:
+    branches:
+      - master
+
+name: 🚀 Deploy to GitHub Pages
+
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  deploy:
+    name: 🎉 Deploy to GitHub Pages
     runs-on: ubuntu-latest
-    timeout-minutes: 180
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v4
-    - name: Use Node.js 20
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
-    - name: 🔨 Build Project
-      run: |
-        npm install
-        npm run build
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.2
-      with:
-        server: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        exclude: |
-          **/.git*
-          **/.git*/**
-          **/node_modules/**
-          **/.idea*
-          **/.idea*/**
-        timeout: 180000
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 🔨 Install dependencies and build project
+        run: |
+          npm install
+          npm run build
+
+      - name: 📂 Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
